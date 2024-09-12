@@ -1,0 +1,378 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text for headings and body text */
+}
+
+/* Layout Styling */
+.layout {
+    display: flex;
+}
+
+/* Sidebar Styling */
+/* .sidebar {
+    width: 200px; Reduced width for the sidebar
+    height: 100vh;
+    background-color: #f0f0f0; Light gray/white background for sidebar
+    color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-right: 1px solid #e0e0e0;
+} */
+ /* Sidebar Section */
+.sidebar {
+    width: 220px; /* Width of the sidebar */
+    height: 100vh; /* Full viewport height */
+    background-color: #f0f0f0; /* Light gray background for sidebar */
+    color: #000000;
+    position: fixed; /* Makes the sidebar fixed (static) */
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    z-index: 1000;
+}
+
+
+
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000; /* Black color for text */
+}
+
+.profile p {
+    font-size: 0.9rem;
+    color: #555555; /* Dark gray for the subtitle */
+}
+
+/* Navigation Links */
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin-bottom: 20px;
+}
+
+.nav-links ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-links ul li a:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+    color: #007bff; /* Blue text color on hover */
+}
+
+/* Main Content Styling */
+/* .main-content {
+    margin-left: 220px; Leave space for the sidebar */
+    /* padding: 40px;
+    flex-grow: 1;
+    background-color: #ffffff;
+} */
+
+/* Main Content Section */
+.main-content {
+    margin-left: 240px; /* Adds margin to the left to avoid overlap with the sidebar */
+    padding: 40px;
+    flex-grow: 1;
+    background-color: #ffffff;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000; /* Black headings */
+}
+
+.section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333; /* Dark gray for text */
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-weight: 500;
+}
+
+.skill-item:hover {
+    transform: scale(1.05); /* Slight scaling effect on hover */
+    background-color: #e0e0e0; /* Slight gray color change */
+    color: #000000; /* Text turns blue */
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-link:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+    color: #000000; /* Blue color for hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text for headings and body text */
+}
+
+.layout {
+    display: flex;
+}
+
+/* Sidebar Section */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light gray/white background for sidebar */
+    color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+}
+
+.profile h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000; /* Black color for text */
+}
+
+.profile p {
+    font-size: 0.9rem;
+    color: #555555; /* Dark gray for subtitle */
+}
+
+.nav-links ul {
+    list-style: none;
+}
+
+.nav-links ul li {
+    margin-bottom: 20px;
+}
+
+.nav-links ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 500;
+}
+
+.nav-links ul li a:hover {
+    background-color: #e0e0e0; /* Light gray on hover */
+    color: #000000; /* Blue text color on hover */
+}
+
+/* Main Content Section */
+.main-content {
+    margin-left: 220px; /* Margin to make space for sidebar */
+    padding: 40px;
+    flex-grow: 1;
+    background-color: #ffffff;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000000; /* Black headings */
+}
+
+/* Project Categories Styling */
+.projects-category {
+    margin-bottom: 40px;
+}
+
+.projects-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #000000; /* Black headings */
+}
+
+/* Individual Project Item Styling */
+.project-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-item:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-5px); /* Lifts the project card on hover */
+}
+
+.project-item h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000000; /* Black headings */
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #333333; /* Darker gray for body text */
+    margin-bottom: 15px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #000000; /* Blue for links */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #000000; /* Darker blue on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+

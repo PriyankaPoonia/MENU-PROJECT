@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Features</title>
+    <link rel="stylesheet" href="/static/css/style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="/static/javascript/script1.js"></script>
+</head>
+<body>
+    <h1>Interactive Portfolio Features</h1>
+    
+    <!-- Section for sending email -->
+    <div class="section">
+        <h2>Send Email</h2>
+        <input type="email" id="email" placeholder="Enter recipient email">
+        <input type="text" id="subject" placeholder="Subject">
+        <textarea id="message" placeholder="Message"></textarea>
+        <button id="send-email-btn">Send Email</button>
+        <div id="email-status"></div>
+    </div>
+
+    <!-- Section for sending bulk emails -->
+    <div class="section">
+        <h2>Send Bulk Emails</h2>
+        <textarea id="bulk-emails" placeholder="Enter recipient emails (comma-separated)"></textarea>
+        <input type="text" id="bulk-subject" placeholder="Subject">
+        <textarea id="bulk-message" placeholder="Message"></textarea>
+        <button id="send-bulk-btn">Send Bulk Emails</button>
+        <div id="bulk-email-status"></div>
+    </div>
+
+    <!-- Section for location info -->
+    <div class="section">
+        <h2>Get Location</h2>
+        <button id="get-location-btn">Get Location</button>
+        <div id="location-info"></div>
+    </div>
+
+    <!-- Section for text-to-speech -->
+    <div class="section">
+        <h2>Text to Speech</h2>
+        <textarea id="tts-text" placeholder="Enter text for conversion"></textarea>
+        <button id="tts-btn">Convert to Speech</button>
+        <audio id="tts-audio" controls></audio>
+    </div>
+
+    <!-- Section for volume control -->
+    <div class="section">
+        <h2>Volume Control</h2>
+        <input type="number" id="volume-level" placeholder="Set volume level (0-100)">
+        <button id="set-volume-btn">Set Volume</button>
+        <div id="volume-status"></div>
+    </div>
+
+    <!-- Section for file upload (image filters) -->
+    <div class="section">
+        <h2>Upload Image and Apply Filters</h2>
+        <input type="file" id="image-file" accept="image/*">
+        <button id="upload-image-btn">Upload and Apply Filters</button>
+        <div id="filtered-images"></div>
+    </div>
+
+
+
+
+
+    <h1>Face Capture and Camera Feed</h1>
+    
+    <!-- Section for Selfie Capture -->
+    <div class="section">
+        <h2>Capture a Selfie</h2>
+        <button id="capture-btn">Capture Selfie</button>
+        <img id="selfie-image" alt="Captured Selfie" style="display:none;">
+    </div>
+    
+    <!-- Section for Webcam Feed -->
+    <div class="section">
+        <h2>Live Webcam Feed</h2>
+        <img id="webcam-feed" src="/webcam_feed" alt="Webcam Feed">
+    </div>
+
+    <!-- Section for IP Camera Feed -->
+    <div class="section">
+        <h2>Live IP Camera Feed</h2>
+        <img id="ipcam-feed" src="/ipcamera_feed" alt="IP Camera Feed">
+    </div>
+
+
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>

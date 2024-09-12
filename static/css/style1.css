@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #333; /* Dark gray text */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #000; /* Black text */
+}
+
+.section {
+    background-color: #fff; /* White background */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+input, textarea, button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    background-color: #fff; /* White background for inputs */
+    color: #333; /* Dark gray text */
+}
+
+button {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333; /* Dark gray background on hover */
+}
+
+#filtered-images img {
+    margin: 10px;
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid #ccc; /* Light gray border around images */
+}
+
+audio {
+    margin-top: 10px;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+}
+
+.section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
